@@ -1,4 +1,4 @@
-
+// first Sum - if sum of all 'A' or 'a' equal to sum 'M' or 'm'
 const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
 const makeRandStr = (str) => (str.length < 30) ? makeRandStr(str + possible.charAt(Math.floor(Math.random() * possible.length)))
@@ -13,9 +13,7 @@ const newArray = arrayOfStrings.map((a) => getLetterQuantity(a.split(''), 'm') =
 console.log(arrayOfStrings);
 console.log(newArray);
 
-
-
-
+// second Sum: check valid credit number
 const validArray = ['5465763102647518', '5115459511709171', '5369737555196196', '5452759340862740', '5255484275893763'];
 const unValidArray = ['4561261212345464', '153454654654', '45645645646547', '12345677000', '35454468'];
 
